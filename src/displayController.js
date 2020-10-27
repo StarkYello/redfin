@@ -9,7 +9,10 @@ const tableGenerator = require('./tableGenerator')
 
 let self = module.exports = {
     showExitMessage: function(){
-        console.log(chalk.red(constants.EXIT_MESSAGE));
+        console.log(chalk.red(constants.EXIT_MESSAGE))
+    },
+    showNoDataMessage: function(){
+        console.log(chalk.red(constants.NO_DATA_MESSAGE))
     },
     showData: function(data){
         console.clear()
@@ -24,8 +27,14 @@ let self = module.exports = {
             let curPageNum = 1
             while(inService) {
                 const data = await dataArchive.getData(curPageNum)
-                const forwardDisable = data.length !== constants.TRUCKS_PER_REQUEST_LIMIT;
-                const backwardDisable = curPageNum === 1;
+                if(data.length === 0){
+                    //in case the source does not return any data.
+                    //could be due to server outage or no business is operating
+                    self.showNoDataMessage()
+                    break
+                }
+                const forwardDisable = data.length !== constants.TRUCKS_PER_REQUEST_LIMIT
+                const backwardDisable = curPageNum === 1
                 const questions = [
                     {
                         type: 'select',
@@ -47,7 +56,6 @@ let self = module.exports = {
                     }else{
                         curPageNum--
                     }
-                    console.log(answer);
                 }
 
                 const onCancel = prompt => {
@@ -55,7 +63,7 @@ let self = module.exports = {
                     inService = false
                 }
 
-                await prompts(questions, {onSubmit, onCancel});
+                await prompts(questions, {onSubmit, onCancel})
             }
         })()
     }

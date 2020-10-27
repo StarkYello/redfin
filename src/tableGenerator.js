@@ -17,6 +17,6 @@ let self = module.exports = {
                     alignment: 'center',
                 }
             }
-        };
+        }
     }
 }

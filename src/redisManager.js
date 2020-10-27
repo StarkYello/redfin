@@ -1,7 +1,7 @@
-const redis = require('redis');
-const { promisify } = require("util");
+const redis = require('redis')
+const { promisify } = require("util")
 const redisClient = redis.createClient() //we are assuming that the CLI runs on the same machine as the redis server
-const getAsync = promisify(redisClient.get).bind(redisClient); //redis doesn't return promise by default
+const getAsync = promisify(redisClient.get).bind(redisClient) //redis doesn't return promise by default
 
 const timeHelper = require('./timeHelper')
 

@@ -11,3 +11,4 @@
 - setup application monitoring with alarms, dashboard, graphs. e.g. CloudWatch, SNS, SMS
 - setup distributed cache across server fleet
 - create a frontend UI, more user options, more advertising friendly services
+- new business opportunities, such as advertising partnership and remote payment

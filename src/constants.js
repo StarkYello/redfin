@@ -1,5 +1,6 @@
 let self = module.exports = {
     EXIT_MESSAGE: "\nThank You For Using Redfin\n",
+    NO_DATA_MESSAGE: "\nThere Is No Food Truck Available At This Time, Please Check Back Later\n",
     TIME_ZONE_SF : "America/Los_Angeles",
     QUERY_TEMPLATE : "https://data.sfgov.org/resource/jjew-r69b.json?" +
         "$select=COLUMNS" +
