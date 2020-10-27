@@ -29,6 +29,8 @@ The token setting is located in the constants.js file
 - cd back to the redfin root directory
 - `npm install`
 - `sudo npm install -g`
+
+## Running
 - `show-open-food-trucks`
 - in-program instruction:
     - use upArrow and downArrow to select navigating option
@@ -37,4 +39,7 @@ The token setting is located in the constants.js file
     - (<-) goes back to the previous page
     - CTRL + C twice to exit the program
     - CTRL + C once to exit Redis server
+## After Running (optional)
 - `npm uninstall -g redfin` to uninstall 
+- `cd ..`
+- `rm -r redfin`
