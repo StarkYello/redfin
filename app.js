@@ -1,8 +1,8 @@
-var request = require('request');
+#!/usr/bin/env node
+const displayController = require('./src/displayController');
 
-request('http://data.sfgov.org/resource/bbb8-hzi6.json', function (error, response, body) {
-    console.log(body);
-});
+function app(){
+    displayController.startDisplay()
+}
 
-// to run locally, first install node and npm. then:
-// $ npm install request && node FoodTruckFinder.js
+app()

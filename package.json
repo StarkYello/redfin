@@ -1,10 +1,15 @@
 {
   "name": "redfin",
   "version": "1.0.0",
-  "description": "get food truck info of the current time. https://drive.google.com/drive/folders/1xAP2Iak0DUWpuXf9V2ze2ossFHlXfZep",
+  "description": "get food truck info of the current time. By Redfin",
   "dependencies": {
+    "bent": "^7.3.12",
+    "chalk": "^4.1.0",
+    "luxon": "^1.25.0",
+    "prompts": "^2.3.2",
     "redis": "^3.0.2",
-    "request": "^2.88.2"
+    "table": "^6.0.3",
+    "yargs": "^16.1.0"
   },
   "main": "app.js",
   "bin": {

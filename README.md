@@ -1,15 +1,11 @@
-Focuses for dev:
-// get data successfully with paging, 10 at a time. get access key
-// keep code modular with good naming
-// need DTO
-// use Redis for caching. 
-
+//README
+//WRITEUP
 
 #Redfin Work Sample - Food Truck Info CLI
 
 ##Overview
 This project creates a command-line interface (CLI) "show-open-food-trucks" 
-that display all opening food trucks from San Francisco at the time of execution. 
+that display all operating food trucks in San Francisco at the time of execution. 
 The CLI only shows 10 food trucks on a paper with potentially less than 10 
 food trucks on the last page. 
 
@@ -17,9 +13,17 @@ food trucks on the last page.
 https://data.sfgov.org/Economy-and-Community/Mobile-Food-Schedule/jjew-r69b
 
 ##Before Running
-- Node 15.0.1
-- Npm 7.0.3
-- Redis 6.0.8 (.tar included within the project)
+- Please have the following installed and upgraded to their respective version or newer
+    - Node 15.0.1 
+        - checking via `node -v` 
+    - NPM 7.0.3
+        - checking via `npm -v`
+    - Redis Server (.tar included within the project)
+- The project is default running on a testing token acquired by the developer. 
+In the event of any heavy usage, please obtain for a personal token via 
+[link](https://dev.socrata.com/docs/app-tokens.html).
+- git clone git@github.com:XingKHuang/redfin.git
+- 
 
 ##Data
 The San Francisco government’s website has a public data source of food trucks
