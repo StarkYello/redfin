@@ -42,4 +42,4 @@ The token setting is located in the constants.js file
 ## After Running (optional)
 - `npm uninstall -g redfin` to uninstall 
 - `cd ..`
-- `rm -r redfin`
+- `sudo rm -r redfin`
