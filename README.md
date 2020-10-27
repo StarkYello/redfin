@@ -1,15 +1,15 @@
-#Redfin Work Sample - Food Truck Info CLI
+# Redfin Work Sample - Food Truck Info CLI
 
-##Overview
+## Overview
 This project creates a command-line interface (CLI) "show-open-food-trucks" 
 that display all operating food trucks in San Francisco at the time of execution. 
 The CLI only shows 10 food trucks on a paper with potentially less than 10 
 food trucks on the last page. 
 
-##Data Source
+## Data Source
 https://data.sfgov.org/Economy-and-Community/Mobile-Food-Schedule/jjew-r69b
 
-##Before Running
+## Before Running
 - Please have the following installed and upgraded to their respective version or newer
     - Node 15.0.1 
         - checking via `node -v` 
@@ -39,19 +39,19 @@ The token setting is located in the constants.js file
     - CTRL + C once to exit Redis server
 - `npm uninstall -g redfin` to uninstall 
 
-##Data
+## Data
 The San Francisco government’s website has a public data source of food trucks
 (https://data.sfgov.org/Economy-and-Community/Mobile-Food-Schedule/jjew-r69b). The data
 can be accessed in a number of forms, including JSON, CSV, and XML. How you access the
 data is up to you, but you can find some useful information about making an API request to
 this data source here (https://dev.socrata.com/foundry/data.sfgov.org/jjew-r69b).
 
-##The Problem
+## The Problem
 Write a command line program that prints out a list of food trucks that are open at the
 current date and current time, when the program is being run. So if I run the program at
 noon on a Friday, I should see a list of all the food trucks that are open then.
 
-##Criteria
+## Criteria
 We will primarily evaluate programs on code quality and output correctness.
 For quality, we expect code to be easy to read and maintain, performant, testable and
 reliable. You should submit code that you are proud to have written. However do not
