@@ -20,15 +20,16 @@ https://data.sfgov.org/Economy-and-Community/Mobile-Food-Schedule/jjew-r69b
 In the event of any heavy usage, please obtain a personal token via 
 [link](https://dev.socrata.com/docs/app-tokens.html). 
 The token setting is located in the constants.js file
+- open a new terminal tab
 - `git clone git@github.com:XingKHuang/redfin.git`
 - `cd redfin`
-- `tar xvzf redis-stable.tar.gz`
+- `tar xvzf redis-stable.tar.gz` to decompress the redis server  
 - `cd redis-stable/src`
-- run `redis-server`, start up the server
+- run `redis-server` to start up the server
 - switch to a new terminal tab
 - cd back to the redfin root directory
-- `npm install`
-- `sudo npm install -g`
+- run `npm install` to install npm module dependencies
+- run `sudo npm install -g` to install the CLI 
 
 ## Running
 - `show-open-food-trucks`
@@ -40,6 +41,6 @@ The token setting is located in the constants.js file
     - CTRL + C twice to exit the program
     - CTRL + C once to exit Redis server
 ## After Running (optional)
-- `npm uninstall -g redfin` to uninstall 
+- run `npm uninstall -g redfin` to uninstall the CLI
 - `cd ..`
-- `sudo rm -r redfin`
+- run `sudo rm -r redfin` to delete the project
