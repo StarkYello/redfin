@@ -10,7 +10,7 @@ We can switch the programming language to a language that supports interfaces, s
 - We can conduct integration testings on the API calls. 
 - Given we are under the scenario of serving millions of concurrent users, 
 we should negotiate a custom API throttle threshold with Socrata to suit our throughput needs. 
-- We should store the Socrata access key along with any other static secrets.
+- We should store the Socrata access key along with any other static secrets
  into a secured remote location, then encrypt the key access with a key management service, such as AWS KMS.
  Setting up a periodically key rotation with Socrata would also be ideal.   
 - Since the purpose of the app is to serve data without any heavy computation,
