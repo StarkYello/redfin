@@ -14,7 +14,7 @@ we should negotiate a custom API throttle threshold with Socrata to suit our thr
  into a secured remote location, then encrypt the key access with a key management service, such as AWS KMS.
  Setting up a periodically key rotation with Socrata would also be ideal.   
 - Since the purpose of the app is to serve data without any heavy computation,
-Multi-threading the whole app would be ideal. 
+multi-threading the whole app would be ideal. 
 - On top of multithreading the app, we can also deploy the app onto a scalable server fleet like AWS EC2.
 - With a server fleet running the app, we can load-balance the server fleet accordingly.
 - To monitor the system, we can set up application monitoring with alarms, dashboards, graphs. e.g. CloudWatch, SNS, SMS.
