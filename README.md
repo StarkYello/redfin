@@ -20,15 +20,18 @@ https://data.sfgov.org/Economy-and-Community/Mobile-Food-Schedule/jjew-r69b
 In the event of any heavy usage, please obtain a personal token via 
 [link](https://dev.socrata.com/docs/app-tokens.html). 
 The token setting is located in the constants.js file
-- open a new terminal tab
-- `git clone git@github.com:XingKHuang/redfin.git`
-- `cd redfin`
+
+## Installation 
+- Options on acquiring the project 
+    * `git clone git@github.com:XingKHuang/redfin.git` if you wish to clone the project from terminal 
+    * download the zip file from https://github.com/XingKHuang/redfin, then run `tar xvzf tar xvzf redfin-master.zip > redfin`   
+- run `cd redfin` to go to the root-dictory 
 - `tar xvzf redis-stable.tar.gz` to decompress the redis server  
 - `cd redis-stable`
 - run `make` to build the redis-server executable 
 - run `./src/redis-server` to start up the server
 - switch to a new terminal tab
-- cd back to the redfin root directory
+- cd back to the project root directory
 - run `npm install` to install npm module dependencies
 - run `sudo npm install -g` to install the CLI 
 
