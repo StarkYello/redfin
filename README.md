@@ -24,14 +24,17 @@ The token setting is located in the constants.js file
 - `git clone git@github.com:XingKHuang/redfin.git`
 - `cd redfin`
 - `tar xvzf redis-stable.tar.gz` to decompress the redis server  
-- `cd redis-stable/src`
-- run `redis-server` to start up the server
+- `cd redis-stable`
+- run `make` to build the redis-server executable 
+- run `./src/redis-server` to start up the server
 - switch to a new terminal tab
 - cd back to the redfin root directory
 - run `npm install` to install npm module dependencies
 - run `sudo npm install -g` to install the CLI 
 
 ## Running
+- Keep the server running on the first tab. 
+- On a new tab, cd into the redfin project root directory 
 - `show-open-food-trucks`
 - in-program instruction:
     - use upArrow and downArrow to select navigating option
