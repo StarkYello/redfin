@@ -19,6 +19,6 @@ multi-threading the whole app would be ideal.
 - With a server fleet running the app, we can load-balance the server fleet accordingly.
 - To monitor the system, we can set up application monitoring with alarms, dashboards, graphs. e.g. CloudWatch, SNS, SMS.
 - To help with the data retrieval performance, we can set up distributed (e.g. Memcached, Redis) cache across the server fleet.
-- To improve DevOps proficiency, we can set up infrastructure provisioning to speed infrastructure modification; AWS CloudFormation is one of the options.   
+- To improve DevOps proficiency, we can set up infrastructure provisioning to speed up infrastructure modification; AWS CloudFormation is one of the options.   
 - To provide the best experience for our customers, we can create a frontend UI with more user options and more advertising friendly services.
 - To catch new business opportunities, we can develop new features, like advertising partnerships and remote payment, which would benefit the food truck businesses.
