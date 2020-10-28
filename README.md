@@ -24,7 +24,7 @@ The token setting is located in the constants.js file
 ## Installation 
 - options on acquiring the project 
     * `git clone git@github.com:XingKHuang/redfin.git` if you wish to clone the project from terminal 
-    * download the zip file from https://github.com/XingKHuang/redfin, then run `tar xvzf tar xvzf redfin-master.zip > redfin`   
+    * download the zip file from https://github.com/XingKHuang/redfin, then run `tar xvzf redfin-master.zip > redfin`   
 - run `cd redfin` to go to the root-dictory 
 - `tar xvzf redis-stable.tar.gz` to decompress the redis server  
 - `cd redis-stable`
