@@ -37,7 +37,7 @@ The token setting is located in the constants.js file
 
 ## Running
 - Keep the server running on the first tab. 
-- On a new tab, cd into the redfin project root directory 
+- On a new tab, cd into the project root directory 
 - `show-open-food-trucks`
 - in-program instruction:
     - use upArrow and downArrow to select navigating option
