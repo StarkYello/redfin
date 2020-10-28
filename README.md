@@ -36,8 +36,8 @@ The token setting is located in the constants.js file
 - run `sudo npm install -g` to install the CLI 
 
 ## Running
-- Keep the server running on the first tab. 
-- On a new tab, cd into the project root directory 
+- keep the server running on the first tab. 
+- on a new tab, cd into the project root directory 
 - `show-open-food-trucks`
 - in-program instruction:
     - use upArrow and downArrow to select navigating option
