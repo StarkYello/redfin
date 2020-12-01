@@ -9,7 +9,7 @@ let self = module.exports = {
     putPage: function(pageNum, page){
         const now = timeHelper.getCurrentTimeInfo()
         redisClient.set(pageNum, JSON.stringify(page))
-        redisClient.expire(pageNum, now.minute * 60 + now.second)
+        redisClient.expire(pageNum, constants.SECONDS_IN_HOUR - (now.minute * 60 + now.second))
     },
     getPage: async function(pageNum){
         return JSON.parse(await getAsync(pageNum))

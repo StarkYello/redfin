@@ -13,6 +13,7 @@ let self = module.exports = {
     PRIMARY_ORDER : "applicant",
     TRUCKS_PER_PAGE_LIMIT : 10,
     ///the CLI will only display 10 trucks, the additional truck is to check for whether we should show next page
-    TRUCKS_PER_REQUEST_LIMIT : 11
+    TRUCKS_PER_REQUEST_LIMIT : 11,
+    SECONDS_IN_HOUR : 3600
 }
 
